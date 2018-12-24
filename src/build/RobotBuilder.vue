@@ -109,7 +109,7 @@ export default {
       } = robot;
       const cost = head.cost + torso.cost + base.cost + rightArm.cost + leftArm.cost;
 
-      this.addToCart({ ...robot, cost })
+      this.addRobotToCart({ ...robot, cost })
         .then(() => this.$router.push('/cart'));
       this.addedToCart = true;
     },
